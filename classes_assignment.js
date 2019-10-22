@@ -59,6 +59,8 @@ class Dog {
 let puppy = new Dog("Charles", "Shibainu", "playful", true);
 console.log(puppy.playFetch());
 
+
+
 let freezingPoint = {
     celsius : 0,
     farenheit : 32,
@@ -75,7 +77,13 @@ class Celsius {
     getKelvinTemp(){
         return this.celsius + 273
     }
+    isBelowFreezing(){
+        if(this.celsius < freezingPoint['celsius']){
+            return 'Bool'
+        }
+    }
 }
-let outsideTempt = new Celsius(10.0)
-console.log(outsideTempt.getKelvinTemp())
+let outsideTempt = new Celsius(-10)
+console.log(outsideTempt.isBelowFreezing())
 
+ class Movie 
