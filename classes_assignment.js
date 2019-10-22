@@ -122,8 +122,8 @@ console.log(outsideTempt.isBelowFreezing())
          return newMinVec
      }
      getLength() {
-         let vecX = Math.pow(this.x)
-         let vecY = Math.pow(this.y)
+         let vecX = Math.pow(this.x, 2)
+         let vecY = Math.pow(this.y, 2)
          let newVec = Math.sqrt(vecX + vecY);
          return newVec
 
